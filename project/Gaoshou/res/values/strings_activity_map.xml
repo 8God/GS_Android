@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="location_hint">位置</string>
+    <string name="search_fail">寻找失败</string>
+    <string name="locate_fail">定位失败</string>
+    <string name="current_longitude">当前经度</string>
+    <string name="current_latitude">当前纬度</string>
+
+</resources>

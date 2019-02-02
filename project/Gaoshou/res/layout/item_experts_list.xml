@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gaoshou.android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="12dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_first_part_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.gaoshou.common.component.SelectableRoundedImageView
+            android:id="@+id/expert_icon_iv"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/common_icon_default_user_head"
+            app:sriv_left_bottom_corner_radius="4dp"
+            app:sriv_left_top_corner_radius="4dp"
+            app:sriv_right_bottom_corner_radius="4dp"
+            app:sriv_right_top_corner_radius="4dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_data_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@id/expert_icon_iv" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:text="王若光"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_professional_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_name"
+                android:layout_toRightOf="@id/tv_name"
+                android:text="主任医师"
+                android:textColor="@color/item_experts_list_default_text_color"
+                android:textSize="12sp" />
+
+            <RatingBar
+                android:id="@+id/rtb_score"
+                style="@style/MyRatingBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="2.5" />
+
+            <TextView
+                android:id="@+id/tv_consultation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rtb_score"
+                android:gravity="bottom"
+                android:text="会诊"
+                android:textColor="@color/item_experts_list_default_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_professional_title"
+                android:layout_below="@id/rtb_score"
+                android:text="会诊+手术"
+                android:textColor="@color/item_experts_list_default_text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_first_part_container"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="1dp"
+        android:maxLines="3"
+        android:minLines="3"
+        android:text="副主任医师,副教授,硕士研究生导师。 北京协和医学院医学博士,香港大学医学院访问学者。擅长疾病: 眩晕、突聋、耳聋、中耳炎、尤其在小儿腺样体肥大、鼻窦炎、鼻咽癌等疾病治疗。"
+        android:textColor="@color/item_experts_list_default_text_color"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/tv_intro"
+        android:layout_marginTop="11dp"
+        android:background="@color/lineColor" />
+
+</RelativeLayout>

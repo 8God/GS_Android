@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="old_pwd_hint">旧密码</string>
+    <string name="new_pwd_hint">新密码</string>
+    <string name="reconfirm_hint">再输一次</string>
+    <string name="difference_pwd">两次密码输入不相等</string>
+    <string name="old_pwd_wrong">旧密码不正确</string>
+    <string name="pwd_too_short">密码至少6位</string>
+    <string name="update_pwd_successed">更新密码成功</string>
+    <string name="update_pwding">正在更新密码...</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TabsWithSwipeGesture="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/auto_sort"
+        TabsWithSwipeGesture:showAsAction="always"
+        android:title="@string/actionbar_menu_auto_sort"/>
+
+</menu>

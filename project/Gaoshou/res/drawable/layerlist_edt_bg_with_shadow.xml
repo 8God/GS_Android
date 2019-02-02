@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@drawable/shape_radius_gray"/>
+    <item
+        android:bottom="1.5dp"
+        android:drawable="@drawable/shape_radius_white"
+        android:left="3dp"
+        android:right="1.5dp"
+        android:top="3dp"/>
+
+</layer-list>

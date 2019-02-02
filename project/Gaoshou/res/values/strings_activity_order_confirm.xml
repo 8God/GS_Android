@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_agree">我已经详细阅读并同意</string>
+    <string name="tv_item">医患条款</string>
+    <string name="btn_play_immediately">立即付款</string>
+    <string name="faild_to_get_order">获取订单信息失败</string>
+    <string name="faild_to_pay">支付失败</string>
+</resources>

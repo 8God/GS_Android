@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gaoshou.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp"
+        android:orientation="vertical"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/shape_radius_gray_stroke"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:src="@drawable/icon_phone" />
+
+            <com.gaoshou.common.widget.ClearTextEditText
+                android:id="@+id/ctedt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:hint="手机号"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_radius_gray_stroke"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/icon_verification_code" />
+
+                <com.gaoshou.common.widget.ClearTextEditText
+                    android:id="@+id/ctedt_verification_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.gaoshou.common.widget.CountDownButton
+                android:id="@+id/btn_get_verification_code"
+                style="@style/Button.Default.Blue"
+                android:layout_width="110dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="15dp"
+                android:text="获取验证码"
+                android:textSize="18sp"
+                app:countDouwn_textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/shape_radius_gray_stroke"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:src="@drawable/icon_password" />
+
+            <com.gaoshou.common.widget.ClearTextEditText
+                android:id="@+id/ctedt_user_psw"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:hint="密码"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register_next"
+            style="@style/Button.Default.Blue"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="61dp"
+            android:text="下一步"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gaoshou.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <com.gaoshou.common.component.SelectableRoundedImageView
+                android:layout_width="129dp"
+                android:layout_height="129dp"
+                android:layout_marginTop="42dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_gs"
+                app:sriv_left_bottom_corner_radius="4dp"
+                app:sriv_left_top_corner_radius="4dp"
+                app:sriv_right_bottom_corner_radius="4dp"
+                app:sriv_right_top_corner_radius="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:text="@string/about_app_name"
+                android:textColor="#464646"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/about_app_version"
+                android:textColor="#464646"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_check_update"
+                android:layout_width="129dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/selector_default_button"
+                android:text="@string/about_check_update"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_marginTop="27dp"
+                android:lineSpacingExtra="1dp"
+                android:text="@string/about_intro"
+                android:textColor="#464646"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

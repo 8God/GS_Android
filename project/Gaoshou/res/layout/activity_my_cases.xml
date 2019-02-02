@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp"
+        android:background="@color/default_bg"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/shape_radius_blue"
+            android:orientation="horizontal"
+            android:padding="1dp" >
+
+            <TextView
+                android:id="@+id/tv_unfinished"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_my_case_tag_bg"
+                android:gravity="center"
+                android:text="@string/tv_unfinished"
+                android:textColor="@drawable/selector_my_case_tab_tv"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_finished"
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_my_case_tag_bg"
+                android:gravity="center"
+                android:text="@string/tv_finished"
+                android:textColor="@drawable/selector_my_case_tab_tv"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

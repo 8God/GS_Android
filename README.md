@@ -14,4 +14,3 @@
 
 ![应用截图4](./resources/page4.jpeg)
 
-![应用截图5](./resources/page5.jpeg)

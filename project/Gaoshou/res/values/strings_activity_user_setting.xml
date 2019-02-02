@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="user_update_head_photo">修改头像</string>
+    <string name="user_name">姓&#160;&#160;&#160;&#160;名</string>
+    <string name="user_sex">性&#160;&#160;&#160;&#160;别</string>
+    <string name="user_mobile">手&#160;&#160;&#160;&#160;机</string>
+    <string name="user_email">邮&#160;&#160;&#160;&#160;箱</string>
+    <string name="user_qq">Q&#160;&#160;Q</string>
+    <string name="user_weixin">微&#160;&#160;&#160;&#160;信</string>
+    <string name="user_phone">电&#160;&#160;&#160;&#160;话</string>
+    <string name="user_address">地&#160;&#160;&#160;&#160;址</string>
+    <string name="user_hospital">医&#160;&#160;&#160;&#160;院</string>
+    <string name="user_dept">科&#160;&#160;&#160;&#160;室</string>
+    <string name="user_position">职&#160;&#160;&#160;&#160;务</string>
+    <string name="user_title">职&#160;&#160;&#160;&#160;称</string>
+    <string name="user_expertise">专&#160;&#160;&#160;&#160;长</string>
+    <string name="user_identifier">身份证</string>
+    <string name="user_summary">简&#160;&#160;&#160;&#160;介</string>
+    <string name="user_qualification_certificate">医师资格证</string>
+    <string name="user_id_photo">身份证照片</string>
+    <string name="user_logout">退出登录</string>
+    <string name="user_updating">正在更新...</string>
+    <string name="user_update_faild">用户数据更新失败</string>
+    <string name="user_update_success">用户数据更新成功</string>
+</resources>

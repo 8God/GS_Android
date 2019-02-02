@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gaoshou.android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_first_part_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_normal_layout_bg"
+                    android:padding="12dp" >
+
+                    <com.gaoshou.common.component.SelectableRoundedImageView
+                        android:id="@+id/iv_expert_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:paddingLeft="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/common_icon_default_user_head"
+                        app:sriv_left_bottom_corner_radius="4dp"
+                        app:sriv_left_top_corner_radius="4dp"
+                        app:sriv_right_bottom_corner_radius="4dp"
+                        app:sriv_right_top_corner_radius="4dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_data_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="22dp"
+                        android:layout_toRightOf="@id/iv_expert_icon" >
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:text="王若光"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/tv_name"
+                            android:layout_toRightOf="@id/tv_name"
+                            android:text="主任医师"
+                            android:textColor="@color/item_experts_list_default_text_color"
+                            android:textSize="12sp" />
+
+                        <RatingBar
+                            android:id="@+id/rtb_score"
+                            style="@style/MyRatingBarStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_name"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="2.5" />
+
+                        <TextView
+                            android:id="@+id/tv_consultation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rtb_score"
+                            android:layout_marginRight="14dp"
+                            android:gravity="bottom"
+                            android:text="会诊"
+                            android:textColor="@color/item_experts_list_default_text_color"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_operation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rtb_score"
+                            android:layout_toRightOf="@id/tv_consultation"
+                            android:gravity="bottom"
+                            android:text="会诊+手术"
+                            android:textColor="@color/item_experts_list_default_text_color"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="44dp"
+                    android:paddingRight="44dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_dept_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_department" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_dept"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_department_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_hospital_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_dept_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_hospital" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_hospital"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_hospital_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_city_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_hospital_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_city" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_city"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_city_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_address_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@+id/ll_patient_city_container" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/patient_address"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_address"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_address_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_name_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_address_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_name" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_name"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_name_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_gender_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_name_container" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/TextView.ConsultationDetilTitle"
+                                android:text="@string/patient_gender" />
+
+                            <RadioGroup
+                                android:id="@+id/rdg_gender"
+                                android:layout_width="223dp"
+                                android:layout_height="38dp"
+                                android:layout_marginLeft="12dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/rdb_male"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:button="@drawable/selector_radio_btn"
+                                    android:checked="true"
+                                    android:padding="5dp"
+                                    android:text="@string/patient_gender_male"
+                                    android:textColor="@color/light_gray"
+                                    android:textSize="15sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rdb_female"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:button="@drawable/selector_radio_btn"
+                                    android:padding="5dp"
+                                    android:text="@string/patient_gender_female"
+                                    android:textColor="@color/light_gray"
+                                    android:textSize="15sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_age_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_gender_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_age" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_age"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_age_hint"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_tel_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@+id/ll_patient_age_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_mobile" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_mobile"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:maxLength="11"
+                            android:hint="@string/patient_mobile_hint"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_sickness_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_tel_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_illness" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_illness"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_illness_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_medical_history_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_sickness_container"
+                        android:descendantFocusability="blocksDescendants" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_anamnesis" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_anamnesis"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_anamnesis_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_symptom_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_medical_history_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_symptom" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_symptom"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_symptom_hint" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_patient_remark_container"
+                        style="@style/LinearLayout.ConsultationDetailContainer"
+                        android:layout_below="@id/ll_patient_symptom_container" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_remark" />
+
+                        <EditText
+                            android:id="@+id/edt_patient_remark"
+                            style="@style/EditText.ConsultationDetilInfo"
+                            android:hint="@string/patient_remark_hint" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_patient_iamge_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/ll_patient_remark_container"
+                        android:layout_alignRight="@id/ll_patient_remark_container"
+                        android:layout_below="@id/ll_patient_remark_container"
+                        android:layout_marginTop="32dp" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_sign_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/TextView.ConsultationDetilTitle"
+                                android:text="@string/patient_sign" />
+
+                            <com.gaoshou.common.widget.ImagePickerView
+                                android:id="@+id/ipv_sign"
+                                android:layout_width="68dp"
+                                android:layout_height="68dp"
+                                android:layout_marginTop="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_iv_assay_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@id/ll_sign_container"
+                            android:layout_toLeftOf="@+id/ll_image_container"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/TextView.ConsultationDetilTitle"
+                                android:text="@string/patient_assay" />
+
+                            <com.gaoshou.common.widget.ImagePickerView
+                                android:id="@+id/ipv_assay"
+                                android:layout_width="68dp"
+                                android:layout_height="68dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_image_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                style="@style/TextView.ConsultationDetilTitle"
+                                android:text="@string/patient_image" />
+
+                            <com.gaoshou.common.widget.ImagePickerView
+                                android:id="@+id/ipv_image"
+                                android:layout_width="68dp"
+                                android:layout_height="68dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="15dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_consultation_purpose_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/ll_patient_iamge_container"
+                        android:layout_alignRight="@id/ll_patient_iamge_container"
+                        android:layout_below="@id/ll_patient_iamge_container"
+                        android:layout_marginTop="28dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            style="@style/TextView.ConsultationDetilTitle"
+                            android:text="@string/patient_consultation_purpose" />
+
+                        <EditText
+                            android:id="@+id/edt_consultation_purpose"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+                            android:layout_marginTop="18dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:gravity="top"
+                            android:hint="@string/patient_consultation_purpose_hint"
+                            android:maxLines="3"
+                            android:minLines="3"
+                            android:padding="6dp"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textColorHint="@color/light_gray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_last_part_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/ll_consultation_purpose_container"
+                        android:layout_alignRight="@id/ll_consultation_purpose_container"
+                        android:layout_below="@id/ll_consultation_purpose_container"
+                        android:layout_marginTop="28dp" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_immediate_or_not_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/TextView.ConsultationDetilTitle"
+                                android:text="@string/patient_immediate_or_not" >
+                            </TextView>
+
+                            <RadioGroup
+                                android:id="@+id/rdg_immediate_or_not"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="12dp"
+                                android:orientation="horizontal" >
+
+                                <RadioButton
+                                    android:id="@+id/rdb_yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:button="@drawable/selector_radio_btn"
+                                    android:checked="true"
+                                    android:padding="5dp"
+                                    android:text="@string/patient_yes"
+                                    android:textColor="@color/light_gray"
+                                    android:textSize="15sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rdb_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:button="@drawable/selector_radio_btn"
+                                    android:padding="5dp"
+                                    android:text="@string/patient_no"
+                                    android:textColor="@color/light_gray"
+                                    android:textSize="15sp" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_others_order_or_not_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll_immediate_or_not_container"
+                            android:layout_marginTop="20dp"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="-7dp" >
+
+                            <CheckBox
+                                android:id="@+id/cb_others_order_or_not"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:checked="true" />
+
+                            <TextView
+                                style="@style/TextView.ConsultationDetilTitle"
+                                android:layout_marginLeft="12dp"
+                                android:text="@string/patient_others_order_or_not" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_patient_reservation_date_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ll_others_order_or_not_container"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="gone" >
+
+                            <TextView
+                                style="@style/TextView.ConsultationDetilTitle"
+                                android:text="@string/patient_reservation_date" />
+
+                            <EditText
+                                android:id="@+id/edt_patient_reservation_date"
+                                android:layout_width="0dp"
+                                android:layout_height="38dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="12dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/edt_shadow_bg"
+                                android:paddingLeft="6dp"
+                                android:textColor="@color/consultation_detail_middle_title"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_upload_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="47dp"
+                            android:layout_below="@id/ll_patient_reservation_date_container"
+                            android:layout_marginTop="34dp"
+                            android:background="@drawable/selector_default_button"
+                            android:gravity="center"
+                            android:text="@string/patient_upload_data"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

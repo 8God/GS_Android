@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="update_pwd">修改密码</string>
+    <string name="my_case">我的案例</string>
+    <string name="my_expert">我的专家</string>
+    <string name="my_complaint">我的投诉</string>
+    <string name="legal_safeguard">法律保障</string>
+    <string name="service_items">服务项目</string>
+    <string name="about">关于</string>
+    <string name="logout">是否退出登录？</string>
+</resources>

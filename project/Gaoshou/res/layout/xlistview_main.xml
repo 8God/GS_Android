@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_data_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.gaoshou.common.component.AutoLoadMoreListView
+            android:id="@+id/xlistview_main_list_xlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:listSelector="@drawable/selector_default_pressed"
+            android:scrollbars="none" />
+
+        <com.gaoshou.common.widget.BackToTopBtn
+            android:id="@+id/btn_back_to_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xlistview_main_loading_container_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="12dp" >
+
+        <ProgressBar
+            android:id="@+id/xlistview_main_loading_pb"
+            style="@style/progress_bar_style"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/xlistview_main_loading_pb"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_pb_title"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xlistview_main_no_record_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:height="40dp"
+        android:text="@string/no_record_found_s"
+        android:textColor="#afafaf"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

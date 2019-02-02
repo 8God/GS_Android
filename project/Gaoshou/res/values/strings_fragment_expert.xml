@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="expert_fragment_no_expert">暂无专家</string>
+    <string name="expert_fragment_city">城市</string>
+    <string name="expert_fragment_map">地图</string>
+    <string name="expert_fragment_experty">专长</string>
+    <string name="expert_fragment_score">评分</string>
+    <string name="expert_fragment_sort">分类</string>
+</resources>

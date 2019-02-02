@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/expert_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_expert_progress_bar_container"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp" >
+
+            <ProgressBar
+                android:id="@+id/pb_expert"
+                style="@style/progress_bar_style"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="7dp" />
+
+            <TextView
+                android:id="@+id/tv_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/pb_expert"
+                android:gravity="center_horizontal"
+                android:text="@string/loading_pb_title"
+                android:textColor="@color/default_text_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_no_record"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:height="40dp"
+            android:text="@string/expert_fragment_no_expert"
+            android:textColor="#afafaf"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <com.gaoshou.common.component.AutoLoadMoreListView
+            android:id="@+id/expert_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_normal_layout_bg" >
+        </com.gaoshou.common.component.AutoLoadMoreListView>
+        
+    </LinearLayout>
+
+</LinearLayout>

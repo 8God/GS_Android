@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="select_from_ablum">从相册中选择</string>
+    <string name="take_photo">拍    照</string>
+    <string name="edit_photo_false">修改图片失败</string>
+</resources>

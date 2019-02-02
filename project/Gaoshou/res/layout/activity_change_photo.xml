@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:src="@drawable/photo" />
+
+        <Button
+            android:id="@+id/btn_album"
+            android:layout_width="129dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="182dp"
+            android:background="@drawable/selector_default_button"
+            android:text="@string/select_from_ablum"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="129dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/selector_default_button"
+            android:text="@string/take_photo"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

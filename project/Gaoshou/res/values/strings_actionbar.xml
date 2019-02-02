@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="actionbar_title_select_city">选择城市</string>
+    <string name="actionbar_title_select_expert">找专家</string>
+    <string name="actionbar_title_select_expertise">选择专长</string>
+    <string name="actionbar_title_category">选择分类</string>
+    <string name="actionbar_title_map">地图</string>
+    <string name="actionbar_title_anamnesis">病史</string>
+    <string name="actionbar_title_symptom">病历</string>
+    <string name="actionbar_title_update_pwd">修改密码</string>
+    <string name="actionbar_title_about">关于</string>
+    <string name="actionbar_title_user_setting">填写完整资料</string>
+    <string name="actionbar_title_change_user_head_photo">修改用户头像</string>
+    <string name="actionbar_title_change_certificate">修改医生资格证</string>
+    <string name="actionbar_title_change_id_photo">修改身份证照片</string>
+    <string name="actionbar_title_my_experts">我的专家</string>
+    <string name="actionbar_title_my_cases">我的案例</string>
+    <string name="actionbar_title_my_repines">我的投诉</string>
+    <string name="actionbar_title_cancel_order">取消订单</string>
+    <string name="actionbar_title_case_detail">案例详情</string>
+    <string name="actionbar_title_order_confirm">订单确认</string>
+    <string name="actionbar_legal_safeguard">法律保障</string>
+    <string name="actionbar_menu_comfirm">确定</string>
+    <string name="actionbar_menu_submit">提交</string>
+    <string name="actionbar_menu_collection">收藏</string>
+    <string name="actionbar_menu_collectioned">已收藏</string>
+    <string name="actionbar_menu_auto_sort">智能排序</string>
+    <string name="actionbar_menu_edit">修改</string>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_app_name">高级医生助手</string>
+    <string name="about_app_version">高手%1$s</string>
+    <string name="about_check_update">检查版本更新</string>
+    <string name="about_intro">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</string>
+    <string name="about_current_version_is_newest">当前版本已是最新版本</string>
+    <string name="about_update_dialog_title">检测到最新版本，版本号为：%1$s,是否需要更新?</string>
+    <string name="about_checking_update">正在检查更新...</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel_reason">退单理由</string>
+    <string name="edt_cancel_hint">请填写退单理由</string>
+    <string name="cancel_reason_hint">请认真填写退单理由，我们将由工作人员根据您的退单理由进行审核，审核通过后将通知您，并将相应费用退还到您的账户</string>
+    <string name="cancel_submitting">正在提交...</string>
+    <string name="faild_to_submit">提交失败</string>
+    <string name="success_to_submit">提交成功</string>
+</resources>

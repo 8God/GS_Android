@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gaoshou.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp" >
+
+    <com.gaoshou.common.component.SelectableRoundedImageView
+        android:id="@+id/srimv_expert_head_pic"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/common_icon_default_user_head"
+        app:sriv_left_bottom_corner_radius="4dp"
+        app:sriv_left_top_corner_radius="4dp"
+        app:sriv_right_bottom_corner_radius="4dp"
+        app:sriv_right_top_corner_radius="4dp" />
+
+    <TextView
+        android:id="@+id/tv_doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="医生名字"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_doctor_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="科室"
+        android:textColor="@color/dark_gray"
+        android:textSize="12sp" />
+
+</LinearLayout>

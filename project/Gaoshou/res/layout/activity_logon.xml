@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imv_logo"
+        android:layout_width="129dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="62dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_gs" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/shape_radius_gray_stroke"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:src="@drawable/icon_phone" />
+
+            <com.gaoshou.common.widget.ClearTextEditText
+                android:id="@+id/ctedt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:hint="手机号"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <include layout="@layout/default_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:src="@drawable/icon_password" />
+
+            <com.gaoshou.common.widget.ClearTextEditText
+                android:id="@+id/ctedt_psw"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:text="账户类型"
+            android:textColor="@color/middle_gray"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rdogp_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rdobtn_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radio_btn"
+                android:paddingLeft="5dp"
+                android:text="@string/doctor"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rdobtn_expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:button="@drawable/selector_radio_btn"
+                android:checked="true"
+                android:paddingLeft="5dp"
+                android:text="@string/expert"
+                android:textColor="@color/middle_gray"
+                android:textSize="14sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logon"
+        style="@style/Button.Default.Blue"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="52dp"
+        android:text="登录"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:orientation="horizontal"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp" >
+
+        <TextView
+            android:id="@+id/tv_open_registeration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_open_forget_psw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/middle_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

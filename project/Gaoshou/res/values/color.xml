@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4FC1E9</color>
+    <color name="colorPrimaryDark">#4FC1E9</color>
+    <color name="default_hint">#AFAFAF</color>
+    <color name="light_gray">#BFBFBF</color>
+    <color name="micro_gray">#B4B4B4</color>
+    <color name="gray">#999999</color>
+    <color name="dark_gray">#333333</color>
+    <color name="middle_gray">#6A6A6A</color>
+    <color name="lineColor">#BFBFBF</color>
+    <color name="tab_text_pre">#29B6F6</color>
+    <color name="bg_disable_post_title">#F0F0F0</color>
+    <color name="disabled_text_color">#B4B4B4</color>
+    <color name="default_text_color">#909090</color>
+    <color name="item_experts_list_default_text_color">#5A5A5A</color>
+    <color name="consultation_detail_middle_title">#6A6A6A</color>
+    <color name="consultation_upload_btn_bg">#4FC1E9</color>
+    <color name="wait_expert_select_btn">#8FC31F</color>
+    <color name="fragment_person_line">#D8D8D8</color>
+    <color name="default_theme">#ff0033</color>
+    <color name="default_bg">#F9F9F9</color>
+    <color name="light_blue">#4FC1E9</color>
+    <color name="default_btn_normal">#4FC1E9</color>
+    <color name="default_btn_pressed">#0075A9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="purple">#5F52A0</color>
+    <color name="green">#8FC31F</color>
+
+</resources>

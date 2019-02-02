@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<string name="tv_unfinished">未完成</string>
+    	<string name="tv_finished">已完成</string>
+    	<string name="tv_consultation">会诊</string>
+    	<string name="tv_consultation_operation">会诊手术</string>
+    	<string name="btn_evaluate">评价</string>
+    	<string name="btn_repine">投诉</string>
+    	<string name="btn_cancel_order">取消订单</string>
+    	<string name="btn_cancel_operation">取消手术</string>
+    	<string name="my_order">我下的单</string>
+    	<string name="my_ordered">我接的单</string>
+</resources>

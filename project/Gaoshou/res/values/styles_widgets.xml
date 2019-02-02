@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyRatingBarStyle" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layerlist_rating_bar</item>
+        <item name="android:minHeight">14dp</item>
+        <item name="android:maxHeight">14dp</item>
+    </style>
+
+    <style name="Button.Default.Blue" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/selector_default_button</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView.RegisterationInfoTitle" parent="@android:style/Widget.TextView">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/middle_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">54dp</item>
+    </style>
+
+    <style name="EditText.RegisterationInfo" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edt_shadow_bg</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="LinearLayout.RegisteraionItemLayout" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LinearLayout.ConsultationDetailContainer" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="TextView.ConsultationDetilTitle" parent="@android:style/Widget.TextView">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/consultation_detail_middle_title</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="EditText.ConsultationDetilInfo" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/edt_shadow_bg</item>
+        <item name="android:textColor">@color/consultation_detail_middle_title</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextView.OrderDetailInfoTitle" parent="@android:style/Widget.TextView">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/middle_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView.OrderDetailInfo" parent="@android:style/Widget.TextView">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/middle_gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="LinearLayout.OrderDetailInfo" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>

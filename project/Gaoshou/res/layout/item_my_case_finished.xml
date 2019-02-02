@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/default_bg"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="horizontal"
+    android:paddingTop="11dp" >
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/default_btn_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_normal_layout_bg"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_type_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/list_consultation" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/tv_consultation"
+                android:textColor="@color/item_experts_list_default_text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_btn_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_evaluate"
+                android:layout_width="50dp"
+                android:layout_height="29dp"
+                android:background="@drawable/shape_radius_blue"
+                android:text="@string/btn_evaluate"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_repine"
+                android:layout_width="50dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/shape_radius_deep_gray"
+                android:text="@string/btn_repine"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+      <LinearLayout
+            android:id="@+id/rl_first_part_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_cancel"
+            android:layout_toRightOf="@id/ll_type_container"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_anamnesis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="病史"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_symptom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_anamnesis"
+                android:layout_marginTop="7dp"
+                android:text="病状"
+                android:textColor="@color/item_experts_list_default_text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_illness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_first_part_container"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@id/ll_type_container"
+            android:maxLines="2"
+            android:layout_marginBottom="14dp"
+            android:text="疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病疾病"
+            android:textColor="@color/item_experts_list_default_text_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

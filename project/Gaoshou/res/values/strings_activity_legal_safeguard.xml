@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="legal_safeguard_title">法律保障标题</string>
+    <string name="legal_safeguard_value">法律保障内容</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="current_city">当前城市</string>
+    <string name="joined_city">已开通城市</string>
+    <string name="guangzhou">广州</string>
+    <string name="zhongshan">中山</string>
+    <string name="foshan">佛山</string>
+
+</resources>

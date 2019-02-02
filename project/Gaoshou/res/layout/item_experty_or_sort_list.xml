@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/selector_anamnesis_item_bg" >
+	
+    <TextView
+        android:id="@+id/tv_experty_or_sort"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/guangzhou"
+        android:textColor="#4C4C4C"
+        android:textSize="14sp" />
+    
+    <View 
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:visibility="gone"
+        android:layout_marginLeft="16dp"
+        android:background="@color/lineColor"/>
+
+</LinearLayout>
+

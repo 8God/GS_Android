@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lv_expertise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp"
+        android:background="@drawable/layerlist_person_top_bottom_line_normal"
+        android:divider="@null"
+        android:visibility="gone"
+        android:paddingBottom="1px"
+        android:paddingTop="1px" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/xlistview_main_loading_container_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="12dp" >
+
+        <ProgressBar
+            android:id="@+id/xlistview_main_loading_pb"
+            style="@style/progress_bar_style"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/xlistview_main_loading_pb"
+            android:gravity="center_horizontal"
+            android:text="@string/loading_pb_title"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/xlistview_main_no_record_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/layout_toolbar"
+        android:gravity="center"
+        android:height="40dp"
+        android:text="@string/no_record_found_s"
+        android:textColor="#afafaf"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

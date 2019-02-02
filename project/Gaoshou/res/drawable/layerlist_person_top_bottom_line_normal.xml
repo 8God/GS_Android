@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@color/fragment_person_line">
+    </item>
+    <item
+        android:drawable="@android:color/white"
+        android:bottom="1px"
+        android:top="1px">
+    </item>
+
+</layer-list>

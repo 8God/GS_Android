@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gaoshou.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="19dp"
+                android:orientation="vertical"
+                android:paddingBottom="50dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_first_part_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="44dp" >
+
+                    <com.gaoshou.common.component.SelectableRoundedImageView
+                        android:id="@+id/iv_user_icon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="16dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/common_icon_default_user_head"
+                        app:sriv_left_bottom_corner_radius="4dp"
+                        app:sriv_left_top_corner_radius="4dp"
+                        app:sriv_right_bottom_corner_radius="4dp"
+                        app:sriv_right_top_corner_radius="4dp" />
+
+                    <TextView
+                        android:id="@+id/tv_update_head_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/iv_user_icon"
+                        android:text="@string/user_update_head_photo"
+                        android:textColor="@color/consultation_detail_middle_title"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="44dp"
+                    android:paddingRight="44dp" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_name_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_name"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="22dp"
+                            android:gravity="center_vertical"
+                            android:text="王大锤"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_sex_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_name_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_sex"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_sex"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="22dp"
+                            android:gravity="center_vertical"
+                            android:text="男"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_mobile_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_sex_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_mobile"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="22dp"
+                            android:gravity="center_vertical"
+                            android:text="135555555"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/ll_user_mobile_container"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/user_email"
+                        android:textColor="@color/consultation_detail_middle_title"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/ll_user_mobile_container"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/tv_email"
+                        android:background="@drawable/edt_shadow_bg"
+                        android:paddingLeft="6dp"
+                        android:textColor="#9B9B9B"
+                        android:textSize="15sp" />
+
+                    <!--
+                    <LinearLayout
+                        android:id="@+id/ll_user_email_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_mobile"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_email"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>                    -->
+
+                    <TextView
+                        android:id="@+id/tv_qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_below="@id/tv_email"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:text="@string/user_qq"
+                        android:textColor="@color/consultation_detail_middle_title"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/edt_qq"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_alignLeft="@id/edt_email"
+                        android:layout_below="@id/tv_email"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/edt_shadow_bg"
+                        android:paddingLeft="6dp"
+                        android:textColor="#9B9B9B"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_weixin_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_qq"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_weixin"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_weixin"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_phone_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll_user_weixin_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_phone"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_address_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_phone_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_address"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_hospital_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_address_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:descendantFocusability="blocksDescendants"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_hospital"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_hospital"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_dept_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_hospital_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:descendantFocusability="blocksDescendants"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_dept"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_dept"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_position_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_dept_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_position"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_title_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_position_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_title"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_expertise_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_title_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_expertise"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_expertise"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_identity_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_expertise_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_identifier"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_identity"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_user_summary_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_identity_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/user_summary"
+                            android:textColor="@color/consultation_detail_middle_title"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/edt_summary"
+                            android:layout_width="match_parent"
+                            android:layout_height="114dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/edt_shadow_bg"
+                            android:maxLines="3"
+                            android:paddingLeft="6dp"
+                            android:textColor="#9B9B9B"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_photo_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_user_summary_container"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="21dp"
+                        android:layout_marginTop="41dp" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="87dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/user_qualification_certificate"
+                                android:textColor="@color/consultation_detail_middle_title"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_qualification_certificate"
+                                android:layout_width="87dp"
+                                android:layout_height="87dp"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="87dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="@string/user_id_photo"
+                                android:textColor="@color/consultation_detail_middle_title"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_id_photo"
+                                android:layout_width="87dp"
+                                android:layout_height="87dp"
+                                android:scaleType="centerCrop"
+                                android:layout_marginTop="14dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

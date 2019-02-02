@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intent_city">currentCity</string>
+    <string name="intent_order_type">order_type</string>
+    
+    <!-- 个人信息修改界面 -->
+    <string name="intent_change_photo_title">change_photo_title</string>
+    <string name="intent_change_photo_uri">change_photo_uri</string>
+    <string name="intent_is_photo_changed">is_photo_changed</string>
+    <string name="intent_to_evaluate">to_evaluate</string>
+    <string name="intent_to_repine">to_repine</string>
+    <string name="intent_to_cancel">to_cancel</string>
+    
+    <!-- 选择病史 -->
+    <string name="intent_anamnesis_name">anamnesis_name</string>
+    <string name="intent_anamnesis_index">anamnesis_index</string>
+    
+    <!-- 选择病状 -->
+    <string name="intent_symptom_name">symptom_name</string>
+    <string name="intent_symptom_index">symptom_index</string>
+    
+    <!-- 案例详情跳转 -->
+    <string name="intent_case_detail_location">case_detail_location</string>
+</resources>

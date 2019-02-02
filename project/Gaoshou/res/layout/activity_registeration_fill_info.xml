@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.gaoshou.android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginTop="-4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal" >
+
+                <com.gaoshou.common.component.SelectableRoundedImageView
+                    android:id="@+id/sriv_user_head_pic"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/common_icon_default_user_head"
+                    app:sriv_left_bottom_corner_radius="4dp"
+                    app:sriv_left_top_corner_radius="4dp"
+                    app:sriv_right_bottom_corner_radius="4dp"
+                    app:sriv_right_top_corner_radius="4dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账户类型"
+                        android:textColor="@color/middle_gray"
+                        android:textSize="16sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rdogrp_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rdobtn_doctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/selector_radio_btn"
+                            android:paddingLeft="5dp"
+                            android:text="医生"
+                            android:textColor="@color/middle_gray"
+                            android:textSize="16sp" />
+
+                        <RadioButton
+                            android:id="@+id/rdobtn_expert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:button="@drawable/selector_radio_btn"
+                            android:checked="true"
+                            android:paddingLeft="5dp"
+                            android:text="专家"
+                            android:textColor="@color/middle_gray"
+                            android:textSize="16sp" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="姓名" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    style="@style/EditText.RegisterationInfo"
+                    android:hint="必填" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="性别" />
+
+                <RadioGroup
+                    android:id="@+id/rdogrp_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rdobtn_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/selector_radio_btn"
+                        android:checked="true"
+                        android:paddingLeft="5dp"
+                        android:text="男"
+                        android:textColor="@color/middle_gray"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/rdobtn_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:button="@drawable/selector_radio_btn"
+                        android:paddingLeft="5dp"
+                        android:text="女"
+                        android:textColor="@color/middle_gray"
+                        android:textSize="16sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="邮箱" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:inputType="textEmailAddress"
+                    style="@style/EditText.RegisterationInfo" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="QQ" />
+
+                <EditText
+                    android:id="@+id/edt_qq"
+                    android:inputType="number"
+                    style="@style/EditText.RegisterationInfo" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="微信" />
+
+                <EditText
+                    android:id="@+id/edt_weixin"
+                    style="@style/EditText.RegisterationInfo" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="固话" />
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    android:inputType="number"
+                    style="@style/EditText.RegisterationInfo" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="地址" />
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    style="@style/EditText.RegisterationInfo" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="医院" />
+
+                <EditText
+                    android:id="@+id/edt_hospital"
+                    style="@style/EditText.RegisterationInfo"
+                    android:hint="必填" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="科室" />
+
+                <EditText
+                    android:id="@+id/edt_dept"
+                    style="@style/EditText.RegisterationInfo"
+                    android:hint="必填" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="职务" />
+
+                <EditText
+                    android:id="@+id/edt_position"
+                    style="@style/EditText.RegisterationInfo"
+                    android:hint="必填" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="职称" />
+
+                <EditText
+                    android:id="@+id/edt_title"
+                    style="@style/EditText.RegisterationInfo"
+                    android:hint="必填" />
+            </LinearLayout>
+
+            <LinearLayout 
+                android:id="@+id/ll_expertise"
+                style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="专长" />
+
+                <EditText
+                    android:id="@+id/edt_expertise"
+                    style="@style/EditText.RegisterationInfo" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:text="身份证" />
+
+                <EditText
+                    android:id="@+id/edt_identity"
+                    android:digits="0123456789Xx"
+                    style="@style/EditText.RegisterationInfo"
+                    android:hint="必填" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/LinearLayout.RegisteraionItemLayout" >
+
+                <TextView
+                    style="@style/TextView.RegisterationInfoTitle"
+                    android:layout_gravity="top"
+                    android:gravity="top|center_horizontal"
+                    android:text="简介" />
+
+                <EditText
+                    android:id="@+id/edt_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/edt_shadow_bg"
+                    android:gravity="left|top"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="23dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/TextView.RegisterationInfoTitle"
+                        android:layout_width="wrap_content"
+                        android:text="医师资格证" />
+
+                    <ImageView
+                        android:id="@+id/imv_certification"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="13dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/photo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="71dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/TextView.RegisterationInfoTitle"
+                        android:layout_width="wrap_content"
+                        android:text="身份证照片" />
+
+                    <ImageView
+                        android:id="@+id/imv_identity"
+                        android:layout_width="87dp"
+                        android:layout_height="87dp"
+                        android:layout_marginTop="13dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/photo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/Button.Default.Blue"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="48dp"
+                android:text="注册"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/toolbar" />
+
+</RelativeLayout>

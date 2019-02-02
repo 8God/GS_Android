@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">高手在线</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松手开始刷新</string>
+    <string name="xlistview_header_hint_loading">正在更新数据</string>
+    <string name="xlistview_header_last_time">最近一次更新在：</string>
+    <string name="xlistview_footer_hint_normal">更多</string>
+    <string name="xlistview_footer_hint_ready">松手开始更新</string>
+    <string name="isMobileNetworkTips">您现在连接的是移动网络，继续观看会产生流量费用，是否继续？</string>
+    <string name="loading_pb_title">正在更新数据</string>
+    <string name="no_record_found_s">暂无数据</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="no_logon_tips">请先登录</string>
+    <string name="title_tab_home">主页</string>
+    <string name="title_tab_expert">专家库</string>
+    <string name="title_tab_msg">消息提醒</string>
+    <string name="title_tab_person">个人资料</string>
+    <string name="network_error">网络不存在，请检查网络连接状态</string>
+    <string name="doctor">我是医生</string>
+    <string name="expert">我是专家</string>
+    <string name="logonJson"> {
+    \"id\": 1,
+    \"username\": \"root\",
+    \"email\": \"xianfengshizhazha@caidigou.net\",
+    \"mobile\": null,
+    \"status\": 1,
+    \"created_at\": \"2015-07-08 15:44:39\",
+    \"updated_at\": \"2015-07-10 14:40:12\",
+    \"doctor\": {
+      \"type\": 0,
+      \"id\": 9,
+      \"user_id\": 1,
+      \"name\": \"王医生\",
+      \"sex\": 1,
+      \"email\": \"huk_1988@me.com\",
+      \"qq\": \"475002739\",
+      \"weixin\": \"kinsuft173\",
+      \"mobile\": \"18672354399\",
+      \"phone\" : \"0202828288\",
+      \"address\": \"广州市天河区中海康城小区\",
+      \"current_address\": \"\",
+      \"hospital\": \"广州市人民医院\",
+      \"dept\": \"骨科\",
+      \"position\": \"骨科主任\",
+      \"title\": \"主任医师\",
+      \"city_id\": 1,
+      \"expertise_id\": 1,
+      \"expertise\": \"骨科\",
+      \"category_id\": null,
+      \"identity\": \"421002198808100011\",
+      \"intro\": \"王医师对骨科方面的疑难杂症都非常擅长，曾经多次获得国家级奖项。\",
+      \"score_times\": 100,
+      \"avg_score\": \"4.3\",
+      \"longitude\": null,
+      \"latitude\": null,
+      \"recommended\": 1,
+      \"certified\": 1,
+      \"consultation_fee\": \"0.01\",
+      \"consultation_operation_fee\": \"0.01\",
+      \"status\": 1,
+      \"created_at\": \"2015-07-30 21:49:40\",
+      \"updated_at\": \"2015-07-30 21:49:40\"
+    }
+  }</string>
+
+</resources>
